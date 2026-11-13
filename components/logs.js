@@ -7,7 +7,6 @@ const siteLogs = [
   {
     date: "2026-11-13",
     title: "观测前线：Minecraft 整合包发布",
-    // 使用反引号 ` 包裹，可以直接换行。用 <p> 分段，<strong> 加粗，<span> 改色
     content: `
       <p>Makino's Minecraft Gamepack 整合包<strong>正式发布</strong>。</p>
       <p>包含了最新的优化模组与光影配置。这次更新解决了以往在低配电脑上频繁卡顿的问题。</p>
@@ -34,49 +33,47 @@ const siteLogs = [
 ];
 
 // ==========================================
-// 核心渲染逻辑，不需要修改
+// 核心渲染逻辑
 // ==========================================
 document.addEventListener("DOMContentLoaded", function() {
-  const logPageSelect = document.getElementById("dateSelect");
-  const logDisplay = document.getElementById("logDisplay");
+  const selectEl = document.getElementById("dateSelect");
+  const displayEl = document.getElementById("logDisplay");
   
-  if (logPageSelect && logDisplay) {
-    renderLogPage(logPageSelect, logDisplay);
+  // 确保页面有这两个元素才执行
+  if (selectEl && displayEl) {
+    
+    // 1. 生成下拉菜单
+    siteLogs.forEach((log, index) => {
+      const option = document.createElement("option");
+      option.value = index;
+      option.textContent = log.date;
+      selectEl.appendChild(option);
+    });
+
+    // 2. 渲染内容的函数
+    const updateDisplay = (index) => {
+      const log = siteLogs[index];
+      let html = `
+        <h2 class="log-content-title">${log.title}</h2>
+        <div class="log-content-text">${log.content}</div>
+      `;
+      
+      // 如果有链接按钮就加上
+      if (log.link) {
+        html += `<div style="margin-top: 30px;">
+                   <a href="${log.link}" class="button_margin" style="margin: 0; padding: 10px 20px; background:#FF9900; color:white; text-decoration:none; border-radius:5px; display:inline-block;">${log.linkText}</a>
+                 </div>`;
+      }
+      
+      displayEl.innerHTML = html;
+    };
+
+    // 3. 监听下拉菜单变化
+    selectEl.addEventListener("change", function(e) {
+      updateDisplay(e.target.value);
+    });
+
+    // 4. 初始化显示第一条
+    updateDisplay(0);
   }
 });
-
-function renderLogPage(selectEl, displayEl) {
-  // 1. 生成日期下拉菜单
-  siteLogs.forEach((log, index) => {
-    const option = document.createElement("option");
-    option.value = index;
-    option.textContent = log.date;
-    selectEl.appendChild(option);
-  });
-
-  // 2. 渲染日志详情的函数
-  function updateDisplay(index) {
-    const log = siteLogs[index];
-    
-    let html = `
-      <h2 class="log-content-title">${log.title}</h2>
-      <div class="log-content-text">${log.content}</div>
-    `;
-    
-    if (log.link) {
-      html += `<div style="margin-top: 30px;">
-                 <a href="${log.link}" class="button_margin" style="margin: 0; padding: 10px 20px; background:#FF9900; color:white; text-decoration:none; border-radius:5px; display:inline-block;">${log.linkText}</a>
-               </div>`;
-    }
-    
-    displayEl.innerHTML = html;
-  }
-
-  // 3. 监听下拉菜单切换
-  selectEl.addEventListener("change", function(e) {
-    updateDisplay(e.target.value);
-  });
-
-  // 4. 默认显示最新一条
-  updateDisplay(0);
-}
