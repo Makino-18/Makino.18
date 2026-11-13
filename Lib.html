@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>实验室 | 野泽驿站</title>
+        <link href="styleday.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="header">
+            <h1 class="h1_margin">实验室</h1>
+        </div>
+        
+        <div class="topnav">
+            <a href="/index.html" class="tna1">首页</a>
+            <a href="/MBC.html">日牧电台</a>
+            <a href="/webnews.html">站点资讯</a>
+            <a href="/toolbox.html">工具箱</a>
+            <a href="/Lib.html">实验室</a>
+            <a href="/claracities/ookawa.html">刻洛里拉地理志</a>
+        </div>
+        
+        <div>
+            <p class="p_margin">上次刷新时间：<time id="current-time"></time></p>
+                <script>
+                    document.addEventListener('DOMContentLoaded', (event) => {
+                    const timeElement = document.getElementById('current-time');
+                    const now = new Date();
+                    timeElement.textContent = now.toLocaleString();
+                    timeElement.setAttribute('datetime', now.toISOString());
+                });
+                </script>
+        </div>
+        
+        <div class="logcard" style="background-color:rgba(122,189,208,1.00)">
+            <p style="float:left">网站页脚系统测试</p>
+            <p style="float:left">[已关闭]</p>
+            <a style="float:right"><button class="testbutton">已关闭</button></a>
+        </div>
+        
+    </body>
+</html>
