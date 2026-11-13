@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-color: #FFFFCC;
+    font-family: 'Segoe UI', sans-serif;
+    ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+button {
+    background-color: #FF9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+button:hover {
+    background-color: #FF6600;
+}
+.header{
+    padding: 10px 10px 0px 0px;
+}
+.h1_margin{
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-right:50px;
+	margin-left:50px;
+}
+.h3_margin{
+	margin-top:10px;
+	margin-bottom:0px;
+	margin-right:50px;
+	margin-left:50px;
+}
+.sub_margin{
+	margin-top:10px;
+	margin-bottom:30px;
+	margin-right:50px;
+	margin-left:50px;
+}
+.p_margin{
+	margin-top:10px;
+	margin-bottom:0px;
+	margin-right:80px;
+	margin-left:80px;
+}
+.button_margin{
+	margin-top:20px;
+	margin-bottom:0px;
+	margin-right:80px;
+	margin-left:80px;
+}
