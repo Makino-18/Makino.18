@@ -34,6 +34,7 @@
             cursor: pointer;
             outline: none;
             font-family: inherit;
+            min-width: 120px; /* 防止下拉框在空状态下缩成一点 */
         }
         .log-selector:focus {
             box-shadow: 0 0 8px rgba(255, 153, 0, 0.5);
@@ -72,6 +73,7 @@
             min-height: 250px;
         }
         
+        /* 段落间距 */
         .log-content-text p {
             margin: 0 0 15px 0;
         }
@@ -94,13 +96,16 @@
     
     <div class="log-page-container">
         <div class="log-filter-bar">
-            <label for="yearSelect">选择年份：</label>
-            <select id="yearSelect" class="log-selector"></select>
+            <!-- 注意这里的 id="categorySelect" -->
+            <label for="categorySelect">选择分类：</label>
+            <select id="categorySelect" class="log-selector"></select>
 
-            <label for="dateSelect" style="margin-left: 10px;">选择日期：</label>
-            <select id="dateSelect" class="log-selector"></select>
+            <!-- 注意这里的 id="tagSelect" -->
+            <label for="tagSelect" style="margin-left: 10px;">选择条目：</label>
+            <select id="tagSelect" class="log-selector"></select>
         </div>
 
+        <!-- 注意这里的 id="logDisplay" -->
         <div class="log-content-box" id="logDisplay"></div>
     </div>
     

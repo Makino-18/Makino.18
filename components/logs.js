@@ -4,7 +4,7 @@ const siteLogs = [
   {
     category: "2026年", 
     tag: "0621",
-    title: "观测前线：Minecraft 整合包发布",
+    title: "修缮日志 | 0621",
     content: `
             <h3 class="h3_margin">新增内容</h3>
             <p class="p_margin">
