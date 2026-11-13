@@ -26,30 +26,82 @@ const siteLogs = [
                 ·移除了【导航测试】页面
             </p>
     `,
-    link: "/Makino.18/toolbox.html",
-    linkText: "前往工具箱"
   },
   {
-    category: "2026年",
-    tag: "10月1日",
-    title: "站点资讯：野泽驿站全新改版",
+    category: "2026年", 
+    tag: "0622",
+    title: "修缮日志 | 0622",
     content: `
-      <p>野泽驿站今日起更换了纯静态的页面托管服务，并重构了样式表。</p>
-      <p>未来将在这里同步更新站点的<strong>功能变动与修复记录</strong>。</p>
-      <p>本次重构删除了大量不必要的冗余代码，页面加载速度得到了显著提升。</p>
-      <p>并且分离了导航栏与页脚，后续维护成本大幅降低。</p>
-      <p>如果你发现页面排版有错乱，请尝试清除浏览器缓存后再刷新。</p>
+            <h3 class="h3_margin">新增内容</h3>
+            <p class="p_margin">
+                ·新增了两篇修缮日志<br/>
+                ·新增了对应修缮日志的列表卡片<br/>
+                ·新增了对应修缮日志的入口按钮<br/>
+                ·新增了全新日志样式
+            </p>
+            <h3 class="h3_margin">修改内容</h3>
+            <p class="p_margin">
+                ·对【站点资讯】页面的排版进行了修改<br/>
+                ·对【站点资讯】页面的内容进行了更新
+            </p>
+            <h3 class="h3_margin">移除内容</h3>
+            <p class="p_margin">
+                ·本次更新未移除任何内容
+            </p>
     `,
-    link: "/Makino.18/webnews.html",
-    linkText: "查看详情"
   },
   {
-    category: "2025年",
-    tag: "12月25日",
-    title: "节日特辑：冬日星愿",
+    category: "2026年", 
+    tag: "0707",
+    title: "修缮日志 | 0707",
     content: `
-      <p>野泽驿站祝各位旅客圣诞快乐！</p>
-      <p>今晚的日牧电台将播放特别节目，欢迎收听。</p>
+            <h3 class="h3_margin">新增内容</h3>
+            <p class="p_margin">
+                ·新增了【刻洛里拉】导航<br/>
+                ·新增了【大川】地理志页面<br/>
+                ·新增了【长滩】地理志页面<br/>
+                ·新增了【西多】地理志页面<br/>
+                ·新增了全新刻洛里拉地理志样式
+            </p>
+            <h3 class="h3_margin">修改内容</h3>
+            <p class="p_margin">
+                ·修改了导航栏
+            </p>
+            <h3 class="h3_margin">移除内容</h3>
+            <p class="p_margin">
+                ·本次更新未移除任何内容
+            </p>
+    `,
+  },
+  {
+    category: "2026年", 
+    tag: "0718",
+    title: "修缮日志 | 0718",
+    content: `
+            <h3 class="h3_margin">新增内容</h3>
+            <p class="p_margin">
+                ·新增了【大川】地理志页面的部分内容<br/>
+                ·新增了【长滩】地理志页面的部分内容<br/>
+                ·新增了【西多】地理志页面的部分内容<br/>
+                ·新增了部分内容的样式
+            </p>
+            <h3 class="h3_margin">修改内容</h3>
+            <p class="p_margin">
+                ·修改了【首页】的部分内容
+            </p>
+            <h3 class="h3_margin">移除内容</h3>
+            <p class="p_margin">
+                ·本次更新未移除任何内容
+            </p>
+    `,
+  },
+  {
+    category: "邮件",
+    tag: "2026",
+    title: "邮件系统测试其一",
+    content: `
+      <p>测试文本</p>
+      <p>测试内容</p>
     `,
     link: "/Makino.18/MBC.html",
     linkText: "打开电台"
