@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>观测日志 | 野泽驿站</title>
+    <link href="styleday.css" rel="stylesheet" type="text/css">
+    <style>
+        /* 专属日志页面的样式 */
+        .log-page-container {
+            margin: 40px 80px;
+            min-height: 50vh;
+        }
+        .log-selector {
+            padding: 10px 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 2px solid #FF9900;
+            background-color: #fff;
+            color: #3a2e1e;
+            cursor: pointer;
+            outline: none;
+            font-family: inherit;
+        }
+        .log-selector:focus {
+            box-shadow: 0 0 8px rgba(255, 153, 0, 0.5);
+        }
+        
+        /* 日志窗口容器 */
+        .log-content-box {
+            background-color: rgba(255, 173, 77, 1);
+            border-radius: 5px;
+            padding: 35px 45px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            width: 900px;
+            max-width: calc(100% - 80px);
+        }
+
+        /* 单行标题 */
+        .log-content-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+            padding-bottom: 15px;
+        }
+
+        /* 长文本内容 */
+        .log-content-text {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #3a2e1e;
+            min-height: 250px; /* 保证内容少时窗口也够大 */
+        }
+        
+        /* 段落间距 */
+        .log-content-text p {
+            margin: 0 0 15px 0;
+        }
+
+        /* 小屏适配 */
+        @media (max-width: 600px) {
+            .log-page-container { margin: 20px; }
+            .log-content-box { padding: 20px; max-width: 100%; }
+            .log-content-title { font-size: 1.3rem; white-space: normal; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="h1_margin">观测日志</h1>
+    </div>
+    
+    <div id="nav-placeholder"></div>
+    
+    <div class="log-page-container">
+        <div style="margin-bottom: 20px;">
+            <label for="dateSelect" style="font-weight: bold; margin-right: 10px;">选择日期：</label>
+            <select id="dateSelect" class="log-selector"></select>
+        </div>
+
+        <div class="log-content-box" id="logDisplay"></div>
+    </div>
+    
+    <div id="footer-placeholder"></div>
+
+    <script src="/Makino.18/components/nav.js"></script>
+    <script src="/Makino.18/components/footer.js"></script>
+    <script src="/Makino.18/components/logs.js"></script>
+</body>
+</html>
