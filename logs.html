@@ -11,6 +11,19 @@
             margin: 40px 80px;
             min-height: 50vh;
         }
+        
+        /* 筛选栏容器 */
+        .log-filter-bar {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .log-filter-bar label {
+            font-weight: bold;
+        }
+
         .log-selector {
             padding: 10px 15px;
             font-size: 1rem;
@@ -56,10 +69,9 @@
             font-size: 1.05rem;
             line-height: 1.9;
             color: #3a2e1e;
-            min-height: 250px; /* 保证内容少时窗口也够大 */
+            min-height: 250px;
         }
         
-        /* 段落间距 */
         .log-content-text p {
             margin: 0 0 15px 0;
         }
@@ -69,6 +81,7 @@
             .log-page-container { margin: 20px; }
             .log-content-box { padding: 20px; max-width: 100%; }
             .log-content-title { font-size: 1.3rem; white-space: normal; }
+            .log-filter-bar { flex-direction: column; align-items: flex-start; gap: 10px; }
         }
     </style>
 </head>
@@ -80,8 +93,11 @@
     <div id="nav-placeholder"></div>
     
     <div class="log-page-container">
-        <div style="margin-bottom: 20px;">
-            <label for="dateSelect" style="font-weight: bold; margin-right: 10px;">选择日期：</label>
+        <div class="log-filter-bar">
+            <label for="yearSelect">选择年份：</label>
+            <select id="yearSelect" class="log-selector"></select>
+
+            <label for="dateSelect" style="margin-left: 10px;">选择日期：</label>
             <select id="dateSelect" class="log-selector"></select>
         </div>
 
