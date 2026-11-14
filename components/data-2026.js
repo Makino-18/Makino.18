@@ -1,6 +1,4 @@
-// components/logs.js
-
-const siteLogs = [
+const data2026 = [
   {
     category: "[重要]发行说明", 
     tag: "v1",
