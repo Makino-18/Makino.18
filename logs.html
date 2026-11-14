@@ -85,6 +85,9 @@
             .log-content-title { font-size: 1.3rem; white-space: normal; }
             .log-filter-bar { flex-direction: column; align-items: flex-start; gap: 10px; }
         }
+        #filterAnchor {
+        scroll-margin-top: 20px; /* 滚动时距离页面顶部留出 20px 的呼吸空间 */
+        }
     </style>
 </head>
 <body>
@@ -95,7 +98,7 @@
     <div id="nav-placeholder"></div>
     
     <div class="log-page-container">
-        <div class="log-filter-bar">
+        <div class="log-filter-bar" id="filterAnchor">
             <!-- 注意这里的 id="categorySelect" -->
             <label for="categorySelect">选择分区：</label>
             <select id="categorySelect" class="log-selector"></select>
