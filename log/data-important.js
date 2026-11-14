@@ -55,7 +55,7 @@ const dataImportant = [
       <p>测试文本</p>
       <p>测试内容</p>
     `,
-    link: "/Makino.18/MBC.html",
+    link: "/Makino.18/mbc.html",
     linkText: "打开电台"
   }
 ];
