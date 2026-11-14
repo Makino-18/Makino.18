@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-color: #FFFFCC;
+    font-family: 'Segoe UI', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.header{
+    background-color: #434343;
+    padding: 30px 0px 20px 0px;
+}
+.header h1{
+    color: white;
+    text-align: center;
+    padding: center;
+}
+.header h3{
+    color: white;
+    text-align: center;
+    padding: center;
+}
+.header h4{
+    color: white;
+    text-align: center;
+    padding: center;
+    margin-top: -20px
+}
+.topnav {
+    overflow: hidden;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #434343;
+    color: white;
+    transition: background 0.4s;
+}
+.textl{
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    padding: center;
+    max-width: 420px;
+    margin: auto;
+}
+.textl h3{
+    margin: auto;
+    width: 100%;
+    padding: 20px 0px 10px 0px;
+    text-align: left;
+}
+.textl p{
+    margin: auto;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    text-align: left;
+}
+.textr{
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    padding: center;
+    max-width: 400px;
+    margin: auto;
+}
+.textr h3{
+    margin: auto;
+    width: 100%;
+    padding: 20px 20px 10px 0px;
+    text-align: right;
+}
+.textr p{
+    margin: auto;
+    width: 100%;
+    padding: 10px 0px 10px -50px;
+    text-align: right;
+}
+.card {
+    background-color: rgba(0,0,0,0);
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    width: 444px;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 0px 15px rgba(255,140,0,0.5);
+    text-align: center;
+}
+.card p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family:'STHup';
+}
+img {
+ max-width: 70%;
+ max-height: 70%;
+ height: auto;
+}
