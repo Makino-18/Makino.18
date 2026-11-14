@@ -1,262 +1,14 @@
 // components/logs.js
 
-const siteLogs = [
-  {
-    category: "2026年", 
-    tag: "0621",
-    title: "修缮日志 | 0621",
-    content: `
-            <h3 class="h3_margin">新增内容</h3>
-            <p class="p_margin">
-                ·新增了【日牧电台】板块<br/>
-                ·新增了【站点资讯】板块<br/>
-                ·新增了【十八工具箱】板块<br/>
-                ·新增了【邦邦实验室】板块<br/>
-                ·为全页面新增了【导航栏】
-            </p>
-            <h3 class="h3_margin">修改内容</h3>
-            <p class="p_margin">
-                ·对【首页】进行了修改<br/>
-                ·对【导航栏】内容进行了更新
-            </p>
-            <h3 class="h3_margin">移除内容</h3>
-            <p class="p_margin">
-                ·移除了【首页】的部分内容<br/>
-                ·移除了【跳转测试】页面<br/>
-                ·移除了【导航测试】页面
-            </p>
-    `,
-  },
-  {
-    category: "2026年", 
-    tag: "0622",
-    title: "修缮日志 | 0622",
-    content: `
-            <h3 class="h3_margin">新增内容</h3>
-            <p class="p_margin">
-                ·新增了两篇修缮日志<br/>
-                ·新增了对应修缮日志的列表卡片<br/>
-                ·新增了对应修缮日志的入口按钮<br/>
-                ·新增了全新日志样式
-            </p>
-            <h3 class="h3_margin">修改内容</h3>
-            <p class="p_margin">
-                ·对【站点资讯】页面的排版进行了修改<br/>
-                ·对【站点资讯】页面的内容进行了更新
-            </p>
-            <h3 class="h3_margin">移除内容</h3>
-            <p class="p_margin">
-                ·本次更新未移除任何内容
-            </p>
-    `,
-  },
-  {
-    category: "2026年", 
-    tag: "0707",
-    title: "修缮日志 | 0707",
-    content: `
-            <h3 class="h3_margin">新增内容</h3>
-            <p class="p_margin">
-                ·新增了【刻洛里拉】导航<br/>
-                ·新增了【大川】地理志页面<br/>
-                ·新增了【长滩】地理志页面<br/>
-                ·新增了【西多】地理志页面<br/>
-                ·新增了全新刻洛里拉地理志样式
-            </p>
-            <h3 class="h3_margin">修改内容</h3>
-            <p class="p_margin">
-                ·修改了导航栏
-            </p>
-            <h3 class="h3_margin">移除内容</h3>
-            <p class="p_margin">
-                ·本次更新未移除任何内容
-            </p>
-    `,
-  },
-  {
-    category: "2026年", 
-    tag: "0718",
-    title: "修缮日志 | 0718",
-    content: `
-            <h3 class="h3_margin">新增内容</h3>
-            <p class="p_margin">
-                ·新增了【大川】地理志页面的部分内容<br/>
-                ·新增了【长滩】地理志页面的部分内容<br/>
-                ·新增了【西多】地理志页面的部分内容<br/>
-                ·新增了部分内容的样式
-            </p>
-            <h3 class="h3_margin">修改内容</h3>
-            <p class="p_margin">
-                ·修改了【首页】的部分内容
-            </p>
-            <h3 class="h3_margin">移除内容</h3>
-            <p class="p_margin">
-                ·本次更新未移除任何内容
-            </p>
-    `,
-  },
-  {
-    category: "2026年", 
-    tag: "0827",
-    title: "修缮日志 | 0827",
-    content: `
-            <h3 class="h3_margin">新增内容</h3>
-            <p class="p_margin">
-                ·新增了【大川】地理志页面的部分内容<br/>
-                ·新增了【十八工具箱】页面的部分内容<br/>
-                ·新增了【Makino's Minecraft Gamepack】详情页面<br/>
-                ·新增了Minecraft风格样式
-            </p>
-            <h3 class="h3_margin">修改内容</h3>
-            <p class="p_margin">
-                ·修改了【导航栏】的部分内容<br/>
-                ·修改了【十八工具箱】页面的部分内容<br/>
-                ·修改了【大川】地理志页面的部分内容
-            </p>
-            <h3 class="h3_margin">移除内容</h3>
-            <p class="p_margin">
-                ·移除了【大川】地理志页面的部分内容<br/>
-                ·移除了【长滩】地理志页面的部分内容<br/>
-                ·移除了【西多】地理志页面的部分内容
-            </p>
-    `,
-  },
-  {
-    category: "2026年", 
-    tag: "0919",
-    title: "修缮日志 | 0919",
-    content: `
-            <h3 class="h3_margin">新增内容</h3>
-            <p class="p_margin">
-                ·新增了【首页】页面的部分内容<br/>
-                ·推出了新版【日牧电台】页面
-            </p>
-            <h3 class="h3_margin">修改内容</h3>
-            <p class="p_margin">
-                ·修改了【导航栏】的部分内容<br/>
-                ·重构了部分页面的逻辑
-            </p>
-            <h3 class="h3_margin">移除内容</h3>
-            <p class="p_margin">
-                本次更新并未移除内容
-            </p>
-    `,
-  },
-  {
-    category: "2026年", 
-    tag: "0922",
-    title: "修缮日志 | 0922",
-    content: `
-            <h3 class="h3_margin">新增内容</h3>
-            <p class="p_margin">
-                ·新增了【站点资讯】页面的部分内容<br/>
-                ·推出了【日志辑录】系统
-            </p>
-            <h3 class="h3_margin">修改内容</h3>
-            <p class="p_margin">
-                ·修改了部分【修缮日志】的整合方式<br/>
-                ·重构了部分页面的逻辑
-            </p>
-            <h3 class="h3_margin">移除内容</h3>
-            <p class="p_margin">
-                本次更新并未移除内容
-            </p>
-    `,
-  },
-  {
-    category: "2026年", 
-    tag: "0923",
-    title: "修缮日志 | 0923",
-    content: `
-            <h3 class="h3_margin">新增内容</h3>
-            <p class="p_margin">
-                ·开启了【页脚测试】页面<br/>
-                ·在【实验室】页面中开启了【页脚测试】入口<br/>
-                ·为【页脚测试】系统新增了一套全新样式<br/>
-                ·为【日志辑录】系统新增了一套全新样式
-            </p>
-            <h3 class="h3_margin">修改内容</h3>
-            <p class="p_margin">
-                ·重构了部分页面的逻辑
-            </p>
-            <h3 class="h3_margin">移除内容</h3>
-            <p class="p_margin">
-                本次更新并未移除内容
-            </p>
-    `,
-  },
-  {
-    category: "2026年", 
-    tag: "1015",
-    title: "修缮日志 | 1015",
-    content: `
-            <h3 class="h3_margin">新增内容</h3>
-            <p class="p_margin">
-                ·新增了【MakinosMinecraftGamepack】页面的部分内容<br/>
-                ·新增了【MMGVersionList】页面<br/>
-            </p>
-            <h3 class="h3_margin">修改内容</h3>
-            <p class="p_margin">
-                ·修改了【MakinosMinecraftGamepack】页面的部分内容
-            </p>
-            <h3 class="h3_margin">移除内容</h3>
-            <p class="p_margin">
-                本次更新并未移除内容
-            </p>
-    `,
-  },
-  {
-    category: "[重要]发行说明", 
-    tag: "v2",
-    title: "发行说明 | v2 | 20261113",
-    content: `
-            <h3 class="h3_margin">系统说明</h3>
-            <p class="p_margin">
-                ·本站现已正式搭载至【Github Page】<br/>
-                ·【日志】专题页面及查阅系统已上线<br/>
-            </p>
-            <h3 class="h3_margin">新增内容</h3>
-            <p class="p_margin">
-                ·新增了一套全新样式系统<br/>
-                ·新增了全新构造系统<br/>
-                ·新增了适配【Github Page】的页面逻辑<br/>
-            </p>
-            <h3 class="h3_margin">修改内容</h3>
-            <p class="p_margin">
-                ·完全重构了页面逻辑，优化了所有页面的视觉表现<br/>
-                ·现有日志页面和临时日志查阅专题页将被迁移<br/>
-            </p>
-            <h3 class="h3_margin">移除内容</h3>
-            <p class="p_margin">
-                ·页脚测试已停止<br/>
-                ·移除了【站点日志】页面，功能已被迁移至其他页面<br/>
-            </p>
-    `,
-  },
-  {
-    category: "邮件",
-    tag: "2026",
-    title: "邮件系统测试其一",
-    content: `
-      <p>测试文本</p>
-      <p>测试内容</p>
-    `,
-    link: "/Makino.18/MBC.html",
-    linkText: "打开电台"
-  }
-];
-
-// ==========================================
-// 核心渲染逻辑
-// ==========================================
 document.addEventListener("DOMContentLoaded", function() {
   const categorySelect = document.getElementById("categorySelect");
   const tagSelect = document.getElementById("tagSelect");
   const displayEl = document.getElementById("logDisplay");
   
-  if (categorySelect && tagSelect && displayEl) {
+  // 确保页面有元素，且数据文件已加载
+  if (categorySelect && tagSelect && displayEl && typeof siteLogs !== 'undefined') {
     
-    // 1. 提取所有不同的 category（利用 Set 去重）
+    // 1. 提取去重后的 category
     const allCategories = [...new Set(siteLogs.map(log => log.category))];
 
     // 初始化第一个下拉菜单
@@ -267,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
       categorySelect.appendChild(option);
     });
 
-    // 2. 渲染具体日志内容的函数
+    // 2. 渲染内容
     const updateDisplay = (log) => {
       let html = `
         <h2 class="log-content-title">${log.title}</h2>
@@ -282,44 +34,48 @@ document.addEventListener("DOMContentLoaded", function() {
       displayEl.innerHTML = html;
     };
 
-    // 3. 根据选中的 category，更新第二个下拉菜单
+    // 3. 更新第二个下拉菜单
     const updateTagOptions = (selectedCategory) => {
-      // 清空当前的 tag 选项
       tagSelect.innerHTML = "";
-      
-      // 过滤出当前 category 下的所有日志
       const filteredLogs = siteLogs.filter(log => log.category === selectedCategory);
       
-      // 填充新的 tag 选项
       filteredLogs.forEach(log => {
         const option = document.createElement("option");
-        // 用唯一索引作为 value，防止同一天有两篇日志导致冲突
         option.value = siteLogs.indexOf(log); 
         option.textContent = log.tag;
         tagSelect.appendChild(option);
       });
 
-      // 默认展示该分类下的第一条日志
       if (filteredLogs.length > 0) {
         updateDisplay(filteredLogs[0]);
       }
     };
 
-    // 4. 监听第一个下拉框变化
+    // 4. 第一个下拉框变化
     categorySelect.addEventListener("change", function(e) {
       updateTagOptions(e.target.value);
+      scrollToAnchor(); // 自动滚回顶部
     });
 
-    // 5. 监听第二个下拉框变化
+    // 5. 第二个下拉框变化
     tagSelect.addEventListener("change", function(e) {
       const logIndex = e.target.value;
       const log = siteLogs[logIndex];
       if (log) {
         updateDisplay(log);
+        scrollToAnchor(); // 自动滚回顶部
       }
     });
 
-    // 6. 页面初始化：触发一次 category 选择
+    // 平滑滚动函数
+    const scrollToAnchor = () => {
+      const anchor = document.getElementById("filterAnchor");
+      if (anchor) {
+        anchor.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
+
+    // 6. 页面初始化
     if (allCategories.length > 0) {
       updateTagOptions(allCategories[0]);
     }
