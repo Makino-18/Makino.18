@@ -129,3 +129,30 @@ img {
     display: block;
     margin: 10px auto;
 }
+
+.sub-footer {
+    background-color: #171717; /* 和导航栏一致的深色 */
+    border-top: 3px solid #FF9900; /* 和导航栏呼应的橙色顶边 */
+    color: #CCCCCC;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px; /* 距离上方正文留出间距 */
+    font-size: 0.9rem;
+}
+.footer-content p {
+    margin: 8px 0;
+}
+.footer-links a {
+    color: #FF9900;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-links a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.footer-copyright {
+    color: #777777;
+    font-size: 0.8rem;
+    margin-top: 15px !important;
+}
