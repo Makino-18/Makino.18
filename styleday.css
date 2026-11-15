@@ -133,39 +133,48 @@ hr {
 .logcard a:first-of-type {
   margin-left: auto;
 }
-
 /* 主站页脚 */
 .footer {
-  background-color: #FFA500;
+  background-color: #CC6600; /* 与头部一致的深橙色 */
   clear: both;
   text-align: center;
   margin-top: 40px;
   padding: 20px 40px;
   margin-top: auto; 
-  color: #3a2e1e;
+  color: #ffffff; /* 默认文字改为白色 */
 }
 
 .footer p {
     margin: 8px 0;
 }
+
+/* 第一行：纯白，不加粗 */
 .footer-site-name {
     font-size: 1rem;
     font-weight: normal;
-    color: #6b3e1b;
+    color: #FFFFFF;
+}
+
+/* 第二行链接：使用浅米色，在深橙底上更柔和 */
+.footer-links {
+    color: #FFE4B5; /* 浅米色 */
 }
 
 .footer-links a {
-    color: #3a2e1e;
+    color: #FFE4B5; 
     text-decoration: none;
     transition: color 0.3s;
 }
+
+/* 悬浮变白，不带下划线 */
 .footer-links a:hover {
     color: #FFFFFF;
-    text-decoration: none;
+    text-decoration: none; 
 }
+
+/* 第三行版权：半透明白色，弱化视觉 */
 .footer-copyright {
     font-size: 0.85rem;
-    color: #a0522d;
+    color: rgba(255, 255, 255, 0.6); 
     margin-top: 15px !important;
-    opacity: 0.85;
 }
