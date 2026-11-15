@@ -90,6 +90,7 @@ body {
     width: 100%;
     padding: 20px 0px 10px 0px;
     text-align: left;
+    scroll-margin-top: 40px; /* 锚点偏移 */
 }
 .textl p {
     margin: auto;
@@ -110,6 +111,7 @@ body {
     width: 100%;
     padding: 20px 0px 10px 0px;
     text-align: right;
+    scroll-margin-top: 40px; /* 锚点偏移 */
 }
 .textr p {
     margin: auto;
@@ -171,31 +173,24 @@ img {
     font-size: 0.8rem;
     margin-top: 15px !important;
 }
+
 /* 悬浮大纲 */
 .outline-box {
     position: fixed;
-    top: 100px;      /* 距离屏幕顶部的高度 */
-    left: 20px;      /* 距离屏幕左侧的宽度 */
+    top: 250px; /* 下移至淡黄色区域 */
+    left: 20px;
     width: 160px;
-    background-color: #171717; /* 和导航栏一致的深色 */
-    border-left: 3px solid #FF9900; /* 橙色强调线 */
+    background-color: #171717;
+    border-left: 3px solid #FF9900;
     padding: 15px 10px;
     border-radius: 0 5px 5px 0;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-    z-index: 1000;   /* 保证它浮在页面最上层 */
+    z-index: 1000;
     font-size: 0.9rem;
 }
 
-.outline-title {
-    color: #FF9900;
-    font-weight: bold;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    letter-spacing: 1px;
-}
-
 .outline-box ul {
-    list-style: none; /* 去除默认圆点 */
+    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -207,7 +202,7 @@ img {
 .outline-box a {
     display: block;
     color: #CCCCCC;
-    text-decoration: none; /* 不显示下划线 */
+    text-decoration: none;
     padding: 5px 10px;
     transition: all 0.3s;
     border-radius: 4px;
@@ -215,10 +210,33 @@ img {
 
 .outline-box a:hover {
     color: #171717;
-    background-color: #FF9900; /* 悬浮变橙色块 */
+    background-color: #FF9900;
 }
 
-/* 小屏幕隐藏大纲，防止遮挡内容 */
+/* 回到顶部按钮 */
+.outline-top-btn {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: #FF9900;
+    border: none;
+    border-bottom: 1px solid #434343;
+    padding: 0 10px 12px 10px;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: inherit;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-align: left;
+    transition: color 0.3s;
+}
+
+.outline-top-btn:hover {
+    color: #FFFFFF;
+}
+
+/* 小屏隐藏大纲 */
 @media (max-width: 1100px) {
     .outline-box {
         display: none;
