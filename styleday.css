@@ -134,17 +134,39 @@ hr {
   margin-left: auto;
 }
 
-/* 页脚 */
+/* 主站页脚 */
 .footer {
   background-color: #FFA500;
   clear: both;
   text-align: center;
   margin-top: 40px;
   padding: 20px 40px;
-  color: #3a2e1e;
   margin-top: auto; 
+  color: #3a2e1e;
 }
-.footer .p_margin {
-  margin: 0;
-  font-size: 0.9rem;
+
+.footer p {
+    margin: 8px 0;
+}
+
+.footer-site-name {
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.footer-links a {
+    color: #3a2e1e;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.footer-copyright {
+    font-size: 0.85rem; 
+    color: #a0522d;     
+    margin-top: 15px !important; 
+    opacity: 0.85; 
 }
