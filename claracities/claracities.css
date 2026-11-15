@@ -1,11 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
+.header, .topnav, .card, .textl, .textr {
+    flex-shrink: 0;
+}
+
 body {
     background-color: #FFFFCC;
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    padding-bottom: 40px;
+    padding-bottom: 0; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
 /* 头部 */
@@ -31,9 +38,7 @@ body {
     font-weight: normal;
 }
 
-/* ==========================================
-   独立子站导航栏（只影响当前页面）
-   ========================================== */
+/* 子站导航栏 */
 .topnav {
     background-color: #171717;
     display: flex;
@@ -58,7 +63,7 @@ body {
     color: #FF9900; /* 悬浮时文字变橙色 */
 }
 
-/* 为当前所在的页面添加高亮样式（利用 HTML 里的 class="active"） */
+/* 导航栏高亮样式 */
 .topnav a.active {
     background-color: #FF9900;
     color: #171717;
@@ -131,12 +136,13 @@ img {
 }
 
 .sub-footer {
-    background-color: #171717; /* 和导航栏一致的深色 */
-    border-top: 3px solid #FF9900; /* 和导航栏呼应的橙色顶边 */
+    background-color: #171717;
+    border-top: 3px solid #FF9900;
     color: #CCCCCC;
     text-align: center;
     padding: 30px 20px;
-    margin-top: 60px; /* 距离上方正文留出间距 */
+    margin-top: auto; 
+    width: 100%;
     font-size: 0.9rem;
 }
 .footer-content p {
