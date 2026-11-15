@@ -1,10 +1,12 @@
 @charset "utf-8";
-/* CSS Document */
 
-.header, .topnav, .card, .textl, .textr {
-    flex-shrink: 0;
-}
+/* 重置 */
+*, *::before, *::after { box-sizing: border-box; }
 
+/* 防横向滚动 */
+html, body { max-width: 100%; overflow-x: hidden; }
+
+/* 基础 */
 body {
     background-color: #FFFFCC;
     font-family: 'Segoe UI', sans-serif;
@@ -13,6 +15,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
+}
+
+/* 禁止挤压 */
+.header, .topnav, .card, .textl, .textr {
+    flex-shrink: 0;
 }
 
 /* 头部 */
@@ -38,15 +45,14 @@ body {
     font-weight: normal;
 }
 
-/* 子站导航栏 */
+/* 导航栏 */
 .topnav {
     background-color: #171717;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-bottom: 3px solid #FF9900; /* 加上橙色底边，呼应主站 */
+    border-bottom: 3px solid #FF9900;
 }
-
 .topnav a {
     display: block;
     color: white;
@@ -57,13 +63,10 @@ body {
     letter-spacing: 1px;
     transition: background 0.3s, color 0.3s;
 }
-
 .topnav a:hover {
     background-color: #434343;
-    color: #FF9900; /* 悬浮时文字变橙色 */
+    color: #FF9900;
 }
-
-/* 导航栏高亮样式 */
 .topnav a.active {
     background-color: #FF9900;
     color: #171717;
@@ -74,11 +77,13 @@ body {
     color: #171717;
 }
 
-/* 排版文字区 */
+/* 排版 */
 .textl {
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-    max-width: 420px;
+    width: 100%;
+    max-width: 500px;
     margin: auto;
+    padding: 0 20px;
 }
 .textl h3 {
     margin: auto;
@@ -95,8 +100,10 @@ body {
 
 .textr {
     font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-    max-width: 420px;
+    width: 100%;
+    max-width: 500px;
     margin: auto;
+    padding: 0 20px;
 }
 .textr h3 {
     margin: auto;
@@ -111,7 +118,7 @@ body {
     text-align: right;
 }
 
-/* 卡片与图片 */
+/* 卡片 */
 .card {
     background-color: rgba(0,0,0,0);
     margin: 40px auto;
@@ -127,14 +134,16 @@ body {
     font-family: 'STHup', sans-serif;
     font-size: 1.2rem;
 }
+
+/* 图片 */
 img {
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 10px auto;
 }
 
+/* 页脚 */
 .sub-footer {
     background-color: #171717;
     border-top: 3px solid #FF9900;
