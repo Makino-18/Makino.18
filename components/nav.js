@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
       <a href="/Makino.18/log/logs.html">观测日志</a>
       <a href="/Makino.18/toolbox.html">工具箱</a>
       <a href="/Makino.18/lib.html">实验室</a>
-      <a href="/Makino.18/claracities/ookawa.html">刻洛里拉地理志</a>
     </div>
   `;
   

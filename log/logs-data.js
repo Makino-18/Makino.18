@@ -1,4 +1,5 @@
 window.siteLogs = [
   ...dataImportant, 
-  ...data2026
+  ...data2026,
+  ...dataEmail
 ];

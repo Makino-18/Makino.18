@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p class="footer-links">
         <a href="/Makino.18/claracities/ookawa.html">刻洛里拉地理志</a> | 
         <a href="/Makino.18/mbc.html">ChuanzeSocialNetwork</a> | 
-        <a href="/Makino.18/toolbox.html">十八工具箱</a>
+        <a href="/Makino.18/mbc.html">日牧电台</a>
       </p>
       <p class="footer-copyright">© ${currentYear} 野泽驿站 · 保留所有权利</p>
     </div>
