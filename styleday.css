@@ -142,6 +142,8 @@ hr {
   padding: 20px 40px;
   margin-top: auto; 
   color: #ffffff; /* 默认文字改为白色 */
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15); 
+  border-top: 4px solid #FF9900; 
 }
 
 .footer p {
@@ -156,15 +158,15 @@ hr {
 }
 
 .footer-links {
-    color: #000000;
+    color: #FFE4B5;
 }
 .footer-links a {
-    color: #FFE4B5; 
+    color: #FF9D35; 
     text-decoration: none;
     transition: color 0.3s;
 }
 .footer-links a:hover {
-    color: #FFFFFF;
+    color: #FFE4B5;
     text-decoration: none; 
 }
 

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const footerHTML = `
     <div class="footer">
-      <p class="footer-site-name">野泽驿站</p>
+      <p class="footer-site-name">野泽驿站(主站)</p>
       <p class="footer-links">
         <a href="/Makino.18/claracities/ookawa.html">刻洛里拉地理志</a> | 
         <a href="/Makino.18/mbc.html">ChuanzeSocialNetwork</a> | 
