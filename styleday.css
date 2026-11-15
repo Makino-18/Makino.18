@@ -148,10 +148,10 @@ hr {
 .footer p {
     margin: 8px 0;
 }
-
 .footer-site-name {
-    font-size: 1.05rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #6b3e1b;
 }
 
 .footer-links a {
@@ -159,14 +159,13 @@ hr {
     text-decoration: none;
     transition: color 0.3s;
 }
-
 .footer-links a:hover {
     color: #FFFFFF;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .footer-copyright {
-    font-size: 0.85rem; 
-    color: #a0522d;     
-    margin-top: 15px !important; 
-    opacity: 0.85; 
+    font-size: 0.85rem;
+    color: #a0522d;
+    margin-top: 15px !important;
+    opacity: 0.85;
 }
