@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const navHTML = `
     <div class="topnav">
-      <a href="/Makino.18/index.html">返回驿站</a>
       <a href="ookawa.html">大川</a>
       <a href="changtan.html">长滩</a>
       <a href="cido.html">西多</a>
